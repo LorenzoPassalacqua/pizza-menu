@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Pizza menu</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link rel="stylesheet" href="csspizza.css">
+        <script src="javapizza.js"></script> 
+    </head>
+
+    <body>
+      <div id="menuBG">
+        <h1 style="margin:0 0px 0px 20px;">Menu Pizza Drill</h1>
+        <input id="btnOrder" type="button" onclick="getReceipit()" value="place order">
+
+        <form id="frmMenu">
+
+            <div class="menu left">
+                <h3>Size</h3>
+                <input class="size" type="radio" name="Size" value="small pizza">Small pizza <br>
+                <input class="size" type="radio" name="Size" value="personal pizza">Personal pizza <br>
+                <input class="size" type="radio" name="Size" value="medium pizza">Medium pizza <br>
+                <input class="size" type="radio" name="Size" value="large pizza">Large pizza <br>
+                <input class="size" type="radio" name="Size" value="extra large">Extra large pizza <br>
+            </div>
+
+            <div class="menu right">
+                <h3>Meats</h3>
+                <input class="toppings" type="checkbox" name="Topping" value="pepperoni">Pepperoni <br>
+                <input class="toppings" type="checkbox" name="Topping" value="sausage">Sausage <br>
+                <input class="toppings" type="checkbox" name="Topping" value="canadian bacon">Canadian Bacon <br>
+                <input class="toppings" type="checkbox" name="Topping" value="ground beef">Ground beef <br>
+                <input class="toppings" type="checkbox" name="Topping" value="anchovy">Anchovy <br>
+                <input class="toppings" type="checkbox" name="Topping" value="chicken">Chicken <br>
+                <input class="toppings" type="checkbox" name="Topping" value="ham">Ham <br>
+            </div>
+
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+
+        </form>
+
+
+
+      </div>
+
+    </body>
+</html>
