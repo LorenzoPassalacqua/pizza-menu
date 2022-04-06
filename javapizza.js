@@ -2,6 +2,7 @@ var runningTotal = 0;
 
 
 function getReceipit(){
+    runningTotal = 0;
     var selectsize;
     var text1 = "<h3>Your order</h3>";
     var sizeTotal = 0;
@@ -90,3 +91,4 @@ function getVeg (){
     console.log ("purchase total: " + "$" + runningTotal + ".00");
     return text3;
 }
+
